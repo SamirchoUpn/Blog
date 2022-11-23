@@ -1,0 +1,27 @@
+
+<!-- templates/base.html -->
+{%load static %}
+<html>
+	<head>
+		<title>Conversatorio copa mundial Qatar 2022</title>
+		<link href="https://fonts.googleapis.com/css?family=\
+		Source+Sans+Pro:400" rel="stylesheet">
+		<link href="{%static 'css/base.css' %}" rel="stylesheet">
+	</head>
+	<body>
+	<div>
+		<header>
+			<div class="nav-left">
+				{% load static %} <img src="{% static "/blog/media/MARCA.png" %}" alt="Logo" />
+				
+				<center><h2><a href="{%url 'Envivo' %}">Partidos en vivo</a></h2></center>
+		<div class="nav-right">
+			<h2><a href="{%url 'post_new' %}">+ Agregar un nuevo post</a></h2>
+		</div>
+		</header>
+		{%block content%}
+		{%endblock content%}
+	</div>
+	</body>
+</html>
+

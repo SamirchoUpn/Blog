@@ -1,0 +1,14 @@
+/* static/css/base.css */
+header h1 a {
+	color: green;
+}
+header h2 a {
+	color: white;
+}
+header h3 a {
+	color: orange;
+}
+
+body{
+  background-color: #84102C;
+}

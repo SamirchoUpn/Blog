@@ -1,0 +1,12 @@
+<!--templates/post_detail.html-->
+{% extends 'base.html' %}
+
+{% block content %}
+	<div class="post-entry">
+		<h2>{{ post.title }}</h2>
+		<p style="color:#FFFFFF";>{{ post.body }}</p></h3>
+	</div>
+	<p><h3><a href="{% url 'post_edit' post.pk %}"> Editar Post</a> | 
+	<a href="{% url 'post_delete' post.pk %}"> Borrar Post</a></h3></p>
+<input type="button" onclick="history.back()" name="volver atrás" value="Volver">
+{% endblock content %}
